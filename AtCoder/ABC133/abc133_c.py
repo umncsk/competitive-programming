@@ -1,8 +1,10 @@
 l,r = map(int, input().split())
 
-minv = 1145141919810931
+r = min(r, 4038);
+ans = 2018
 for i in range(l, r + 1):
     for j in range(i + 1, r + 1):
-        minv = min(minv, (i * j) % 2019)
+        x = i * j % 2019
+        ans = min(ans, x)
 
-print(minv)
+print(ans)
