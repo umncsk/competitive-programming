@@ -57,4 +57,3 @@ fn main() {
     }
     println!("{}", s.match_indices("1").count());
 }
-
